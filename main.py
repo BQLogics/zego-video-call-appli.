@@ -59,7 +59,8 @@ class LoginForm(FlaskForm):
 
 @app.route("/")
 def home():
-    return redirect(url_for("login"))
+    # return redirect(url_for("home"))
+     return render_template('home.html')
 
 
 @app.route("/login", methods=["POST", "GET"])
